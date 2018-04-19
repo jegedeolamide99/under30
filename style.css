@@ -11,7 +11,7 @@ body {
   box-sizing: inherit;
 }
 a {
-  color: #CCCC00;
+  color: #E5E500;
   text-decoration: none;
 }
 .page__container {
@@ -92,7 +92,7 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: #cccc00;
+  background: #E5E500;
   width: 50px;
   height: 50px;
   font-size: 1.25rem;
@@ -151,7 +151,7 @@ footer > .row {
 }
 
 .newsletter .form-group button {
-  background: #cccc00;
+  background: #E5E500;
   border: none;
   border-radius: 4px;
   font-size: 1rem;
