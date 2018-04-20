@@ -170,6 +170,38 @@ footer > .row {
   display: inline-block;
   margin: .5rem 1rem;
 }
+/* FAQS */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #3C753E;
+  color: #5C735D;
+}
+.accordion__toggle {
+  background-color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+  color: #5C735D;
+  font-size: 1.125rem;
+  text-align: left;
+  transition: .4s;
+  border: 0;
+  outline: 0;
+}
+.active, .accordion__toggle:hover {
+  background-color: #F4FDF4;
+}
+.accordion__panel {
+  padding: 0 1rem;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .4s ease-out;
+}
 @media screen and (min-width:576px) {
     .page__container {
         max-width: 540px;
