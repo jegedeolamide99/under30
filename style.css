@@ -10,12 +10,12 @@ body {
 *, ::after, ::before {
   box-sizing: inherit;
 }
-a {
+a,i {
   color: #E5E500;
   text-decoration: none;
   transition: all .15s ease;
 }
-a:hover {
+a:hover, i:hover {
   color: #2A7D2E;
   text-decoration: none;
   transition: all .15s ease;
@@ -213,6 +213,7 @@ footer > .row {
   overflow: hidden;
   transition: max-height .4s ease-out;
 }
+.accordion__panel p {margin-top: 1rem;}
 .accordion__toggle:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
