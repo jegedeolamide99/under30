@@ -56,15 +56,15 @@
             <form action="">
               <div class="form-group">
                 <label for="inputFname">First Name</label>
-                <input type="text" class="form-control" id="inputFname" placeholder="First Name">
+                <input type="text" class="form-control" id="inputFname" placeholder="First Name" pattern="[a-zA-Z]+" title="Only input names that are formed with any combination of letters A-Z" required>
               </div>
               <div class="form-group">
                 <label for="inputFname">Last Name</label>
-                <input type="text" class="form-control" id="inputLname" placeholder="Last Name">
+                <input type="text" class="form-control" id="inputLname" placeholder="Last Name" pattern="[a-zA-Z]+" title="Only input names that are formed with any combination of letters A-Z" required>
               </div>
               <div class="form-group">
                 <label for="inputEmail">Email</label>
-                <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email">
+                <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email" required>
               </div>
               <div class="form-group">
                 <label for="Textarea">Your Message</label>
@@ -97,7 +97,7 @@
           <div class="page__column col-6">
             <form action="" class="form-group">
               <div class="input">
-                <input type="email" name="email" id="email" placeholder="Your Email Address">
+                <input type="email" name="email" id="email" placeholder="Your Email Address" required>
               </div>
               <div class="submit">
                 <button type="submit" class="btn btn-large">Subscribe</button>
