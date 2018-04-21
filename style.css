@@ -14,6 +14,7 @@ a {
   color: #E5E500;
   text-decoration: none;
 }
+main {padding: 2rem 0;}
 .page__container {
   margin-right: auto;
   margin-left: auto;
@@ -217,6 +218,23 @@ footer > .row {
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+/* SERVICES */
+.services .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1.125rem;
+}
+.services .row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.img {
+  max-width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
 @media screen and (max-width:991px) {
   ul {padding-left: 1.25rem;}
   .info .page__column div {
@@ -227,7 +245,6 @@ footer > .row {
   }
   .values .title {margin-bottom: 2rem;}
   .title {margin: 1rem 0;}
-  main {padding: 2rem 0;}
 }
 @media screen and (min-width:576px) {
     .page__container {
@@ -256,7 +273,6 @@ footer > .row {
     margin-right: 2rem;
   }
   .values .card.last {margin-right: 0;}
-  main {padding: 4rem 0;}
   .page__hero h1 {font-size: 3rem;}
 }
 @media screen and (min-width:1200px) {
