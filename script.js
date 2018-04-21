@@ -11,3 +11,10 @@ for (i=0; i<accordion.length; i++) {
     }
   });
 }
+function classToggle() {
+  const navs = document.querySelectorAll('.nav__links')
+
+  navs.forEach(nav => nav.classList.toggle('nav__toggleShow'));
+}
+document.querySelector('.nav__toggler')
+  .addEventListener('click', classToggle);
