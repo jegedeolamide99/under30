@@ -52,7 +52,9 @@ main {padding: 2rem 0;}
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+  flex-wrap: wrap;
 }
+.nav__toggler {display: none;}
 .nav__links {
   display: flex;
   justify-content: space-between;
@@ -66,6 +68,7 @@ main {padding: 2rem 0;}
 .nav__item:last-child {
   padding-right: 0;
 }
+
 /* HERO */
 .home .page__hero  {
   display: flex;
@@ -134,8 +137,20 @@ main {padding: 2rem 0;}
   background-color: #0B3D2C;
   color: #FFF4DF;
 }
+/* PARTNERS */
+.partners{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 0;
+}
+.partners_img {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 /* NEWSLETTER */
-footer > .row {
+footer {
   background-color: #F4FDF4;
 }
 .newsletter {
@@ -144,6 +159,7 @@ footer > .row {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+  width: 100%;
 }
 .newsletter .form-group {
   display: flex;
@@ -185,6 +201,7 @@ footer > .row {
   padding: 0;
 }
 /* FOOTER SOCIAL */
+.page_footer {background-color: #fff;}
 .page__footer--social {
   display: flex;
   justify-content: flex-end;
@@ -194,6 +211,7 @@ footer > .row {
   display: inline-block;
   margin: .5rem 1rem;
 }
+.page_footer {padding: 1rem 0;}
 /* FAQS */
 .accordion {
   display: flex;
@@ -336,6 +354,19 @@ button.btn:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .nav__brand {flex: 0 0 80%;}
+  .nav__links {
+    display: none;
+    flex-direction: column;
+  }
+  .nav__toggler {
+    display: initial;
+    cursor: pointer;
+  }
+  .nav__toggleShow {
+    display: flex;
+    padding: 1rem 0;
   }
 }
 @media screen and (min-width:576px) {
