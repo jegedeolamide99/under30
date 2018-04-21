@@ -54,6 +54,7 @@ main {padding: 2rem 0;}
   padding: 1rem 0;
   flex-wrap: wrap;
 }
+.nav__brand a {color: #000; font-weight: 700;}
 .nav__toggler {display: none;}
 .nav__links {
   display: flex;
