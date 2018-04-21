@@ -10,12 +10,12 @@ body {
 *, ::after, ::before {
   box-sizing: inherit;
 }
-a,i {
+a,.address svg {
   color: #E5E500;
   text-decoration: none;
   transition: all .15s ease;
 }
-a:hover, i:hover {
+a:hover, .address svg:hover {
   color: #2A7D2E;
   text-decoration: none;
   transition: all .15s ease;
@@ -37,12 +37,12 @@ main {padding: 2rem 0;}
   width: 100%;
   min-height: 1px;
 }
-.col-4, .col-6 {
+.col-4, .col-6, .col-12 {
   flex: 0 0 100%;
   max-width: 100%;
 }
 .title {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #2A7D2E;
 }
@@ -58,6 +58,7 @@ main {padding: 2rem 0;}
   justify-content: space-between;
   list-style: none;
   align-items: center;
+  font-weight: 700;
 }
 .nav__item {
   padding: 0 3rem;
@@ -66,17 +67,30 @@ main {padding: 2rem 0;}
   padding-right: 0;
 }
 /* HERO */
+.home .page__hero  {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 300px;
+  background-image: url(images/business3.jpg);
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-color: #c4c4c4;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page__hero h3 {color: #FFF4DF;}
 .page__hero h1 {
   font-weight: 700;
   font-size: 2rem;
-  color: #3C753E;
+  color: #E5E500;
 }
 .page__hero h3 {
   font-size: 1.125rem;
   font-weight: 400;
 }
 /* VALUES */
-.values .title {text-align: center;}
+.values .title {text-align: center; margin-bottom: 2rem;}
 .values .row {
   justify-content: center;
   align-items: center;
@@ -317,6 +331,11 @@ button.btn:hover {
   .values .title {margin-bottom: 2rem;}
   .title {margin: 1rem 0;}
   .contact .page__column {margin-bottom: 1rem;}
+  .page__footer--social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (min-width:576px) {
     .page__container {
@@ -349,6 +368,9 @@ button.btn:hover {
   .contact .form {padding-right: 2rem;}
   .contact .address {padding-left: 2rem;}
   .contact .map {margin-top: 2rem;}
+  .home .page__hero {min-height: 600px;}
+  .home .page__hero { font-size: 4rem;}
+  .home .page__hero h3{font-size: 2rem;}
 }
 @media screen and (min-width:1200px) {
   .page__container {
