@@ -62,6 +62,7 @@ a.nav__brand {color: #000; font-weight: 700;}
   list-style: none;
   align-items: center;
   font-weight: 700;
+  margin-bottom: 0;
 }
 .nav__item {
   padding: 0 3rem;
@@ -341,6 +342,9 @@ button.btn:hover {
 }
 @media screen and (max-width:991px) {
   ul {padding-left: 1.25rem;}
+  .info .row {
+    margin-bottom: 1rem;
+  }
   .info .page__column div {
     padding: 1.25rem;
   }
