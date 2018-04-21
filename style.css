@@ -1,6 +1,6 @@
 body {
-  color: #5C735D;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  color: #2F2F2F;
+  font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -37,7 +37,7 @@ a {
 .title {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #3C753E;
+  color: #2A7D2E;
 }
 /* NAV */
 .nav {
@@ -83,7 +83,8 @@ a {
   text-align: center;
   padding: 1.25rem;
   border-radius: 4px;
-  background-color: #F4FDF4;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 30px 0px;
 }
 .card span {
   position: absolute;
@@ -106,10 +107,11 @@ a {
 }
 /* INFO SECTION */
 .info .page__column div {
-  padding: 0 25px 10px;
+  padding: 2rem;
 }
 .info .page__column.alternate {
-  background-color: #F4FDF4;
+  background-color: #0B3D2C;
+  color: #FFF4DF;
 }
 /* NEWSLETTER */
 footer > .row {
@@ -148,6 +150,7 @@ footer > .row {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 1rem;
+  color: #2F2F2F;
 }
 
 .newsletter .form-group button {
@@ -155,7 +158,7 @@ footer > .row {
   border: none;
   border-radius: 4px;
   font-size: 1rem;
-  color: #5C735D;
+  color: #2F2F2F;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -179,13 +182,13 @@ footer > .row {
   margin-bottom: 1rem;
   width: 100%;
   border: 1px solid #3C753E;
-  color: #5C735D;
+  color: #2F2F2F;
 }
 .accordion__toggle {
-  background-color: #fff;
+  background-color: #F4FDF4;
   cursor: pointer;
   padding: 1rem;
-  color: #5C735D;
+  color: #2F2F2F;
   font-size: 1.125rem;
   text-align: left;
   transition: .4s;
@@ -193,7 +196,8 @@ footer > .row {
   outline: 0;
 }
 .active, .accordion__toggle:hover {
-  background-color: #F4FDF4;
+  background-color: #2A7D2E;
+  color: #FFF4DF;
 }
 .accordion__panel {
   padding: 0 1rem;
@@ -205,13 +209,25 @@ footer > .row {
 .accordion__toggle:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
-  color: #777;
+  color: #FFF4DF;
   float: right;
   margin-left: 5px;
 }
 
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+@media screen and (max-width:991px) {
+  ul {padding-left: 1.25rem;}
+  .info .page__column div {
+    padding: 1.25rem;
+  }
+  .values .page__column:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .values .title {margin-bottom: 2rem;}
+  .title {margin: 1rem 0;}
+  main {padding: 2rem 0;}
 }
 @media screen and (min-width:576px) {
     .page__container {
@@ -240,6 +256,8 @@ footer > .row {
     margin-right: 2rem;
   }
   .values .card.last {margin-right: 0;}
+  main {padding: 4rem 0;}
+  .page__hero h1 {font-size: 3rem;}
 }
 @media screen and (min-width:1200px) {
   .page__container {
