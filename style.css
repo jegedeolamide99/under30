@@ -26,7 +26,6 @@ main {padding: 2rem 0;}
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  width: 100%;
 }
 .row {
   display: flex;
@@ -331,6 +330,7 @@ button.btn:hover {
   .values .title {margin-bottom: 2rem;}
   .title {margin: 1rem 0;}
   .contact .page__column {margin-bottom: 1rem;}
+  .page__footer--social p {text-align: center;}
   .page__footer--social {
     display: flex;
     justify-content: center;
