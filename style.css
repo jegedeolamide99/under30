@@ -12,12 +12,12 @@ body {
   box-sizing: inherit;
 }
 a,.address svg {
-  color: #E5E500;
+  color: #2A7D2E;
   text-decoration: none;
   transition: all .15s ease;
 }
 a:hover, .address svg:hover {
-  color: #2A7D2E;
+  color: #E5E500;
   text-decoration: none;
   transition: all .15s ease;
 }
@@ -54,7 +54,7 @@ main {padding: 2rem 0;}
   padding: 1rem 0;
   flex-wrap: wrap;
 }
-a.nav__brand {color: #000; font-weight: 700;}
+a.nav__brand {flex: 0 0 10%; font-weight: 700;}
 .nav__toggler {display: none;}
 .nav__links {
   display: flex;
@@ -360,7 +360,8 @@ button.btn:hover {
     justify-content: center;
     align-items: center;
   }
-  .nav__brand {flex: 0 0 80%;}
+  a.nav__brand {flex: 0 0 30%;}
+  .nav__toggler {flex: 0 0 70%;}
   .nav__links {
     display: none;
     flex-direction: column;
