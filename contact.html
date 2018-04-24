@@ -16,7 +16,7 @@
       <div class="page__container">
         <div class="nav">
           <a href="index.html" class="nav__brand">
-            Under 30
+            <img src="images/logo.jpg" alt="Under 30" class="img">
           </a>
           <div class="nav__toggler">
             <i class="fas fa-bars"></i>
@@ -56,7 +56,7 @@
       <div class="row">
         <div class="page__column col-6">
           <div class="form">
-            <form action="">
+            <form name="Contact" method="POST" netlify>
               <div class="form-group">
                 <label for="inputFname">First Name</label>
                 <input type="text" class="form-control" id="inputFname" placeholder="First Name" pattern="[a-zA-Z]+" title="Only input names that are formed with any combination of letters A-Z" required>
@@ -80,7 +80,7 @@
         <div class="page__column col-6">
           <div class="address">
             <p><i class="fas fa-map-marker"></i> Address: Ugbowo Campus, University of Benin, Benin City, Edo State, Nigeria.</p>
-            <p><i class="fas fa-phone"></i> Mobile Number: <a href="tel:+8164137310">08164137310</a></p>
+            <p><i class="fas fa-phone"></i> Mobile Number: <a href="tel:+2348164137310">+2348164137310</a></p>
             <p><i class="fas fa-envelope"></i> Email: <a href="mailto:bfinasconferenceafrica@gmail.com">bfinasconferenceafrica@gmail.com</a></p>
             <div class="map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.455507522815!2d5.601557812391252!3d6.334991327089366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d3014e1c75cf%3A0x5f3cd0b086c0e598!2sUniversity+of+Benin!5e0!3m2!1sen!2sng!4v1524290731898" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -98,7 +98,7 @@
             <p>Subscribe to our newsletter to keep in touch with our latest updates.</p>
           </div>
           <div class="page__column col-6">
-            <form action="" class="form-group">
+            <form name="newsletter" method="POST" class="form-group" netlify>
               <div class="input">
                 <input type="email" name="email" id="email" placeholder="Your Email Address" required>
               </div>
