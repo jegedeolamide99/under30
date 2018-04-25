@@ -85,7 +85,7 @@ a.nav__brand {flex: 0 0 10%; font-weight: 700;}
   background-repeat: no-repeat;
 }
 .page__hero h3 {color: #FFF4DF;}
-.page__hero h1 {
+.text h1 {
   font-weight: 700;
   font-size: 2rem;
   color: #E5E500;
@@ -256,7 +256,7 @@ footer {
   margin-left: 5px;
 }
 
-.active:after {
+.faqs .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 /* SERVICES */
@@ -341,9 +341,19 @@ button.btn:hover {
   position:absolute;
 }
 /* SLIDESHOW */
+.page__slideshow {position: relative;}
 /* Hide the images by default */
 .mySlides {
   display: none;
+  position: relative;
+  flex-direction: column;
+  background-color: #999999;
+  background-image: url("images/business3.jpg");
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80vh;
 }
 
 /* Next & previous buttons */
@@ -354,11 +364,13 @@ top: 50%;
 width: auto;
 margin-top: -22px;
 padding: 16px;
-color: white;
 font-weight: bold;
 font-size: 18px;
 transition: 0.6s ease;
 border-radius: 0 3px 3px 0;
+}
+.prev svg, .next svg {
+  color: #E5E500;
 }
 
 /* Position the "next button" to the right */
@@ -369,23 +381,21 @@ border-radius: 3px 0 0 3px;
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-background-color: rgba(0,0,0,0.8);
+background-color: #2F2F2F;
 }
 
 /* Caption text */
 .text {
-color: #f2f2f2;
-font-size: 15px;
+left: 7%;
 padding: 8px 12px;
 position: absolute;
-bottom: 8px;
+bottom: 50%;
 width: 100%;
-text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-color: #f2f2f2;
+color: #FFF4DF;
 font-size: 12px;
 padding: 8px 12px;
 position: absolute;
@@ -398,14 +408,14 @@ cursor: pointer;
 height: 15px;
 width: 15px;
 margin: 0 2px;
-background-color: #bbb;
+background-color: #F4FDF4;
 border-radius: 50%;
 display: inline-block;
 transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-background-color: #717171;
+background-color: #2A7D2E;
 }
 
 /* Fading animation */
@@ -446,7 +456,6 @@ to {opacity: 1}
     align-items: center;
   }
   a.nav__brand {flex: 0 0 30%;}
-  .nav__toggler {flex: 0 0 70%;}
   .nav__links {
     display: none;
     flex-direction: column;
@@ -454,6 +463,8 @@ to {opacity: 1}
   .nav__toggler {
     display: initial;
     cursor: pointer;
+    flex: 0 0 70%;
+    text-align: right;
   }
   .nav__toggleShow {
     display: flex;
