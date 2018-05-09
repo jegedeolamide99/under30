@@ -288,9 +288,9 @@ footer {
   object-fit: cover;
 }
 /* CONTACT */
-.contact .form-group {margin-bottom: 1rem;}
+.contact .form-group, .certificate .form-group {margin-bottom: 1rem;}
 .contact .form-group .col-6 {padding: 0 .5rem;}
-.contact .form-control {
+.contact .form-control, .certificate .form-control {
   display: block;
   width: 100%;
   padding: .375rem .75rem;
