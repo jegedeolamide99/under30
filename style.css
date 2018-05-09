@@ -478,6 +478,7 @@ to {opacity: 1}
     display: flex;
     padding: 1rem 0;
   }
+  .contact .form-control {width: 85vw;}
 }
 @media screen and (min-width:576px) {
     .page__container {
