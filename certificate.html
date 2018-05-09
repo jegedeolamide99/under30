@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Under 30 CEO's Initiative</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+</head>
+<body class="certificate">
+  <header>
+    <nav>
+      <div class="page__container">
+        <div class="nav">
+          <a href="index.html" class="nav__brand">
+            <img src="images/logo.jpg" alt="Under 30" class="img">
+          </a>
+          <div class="nav__toggler">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="nav__links">
+            <li>
+              <a class="nav__item" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="nav__item" href="about.html">About</a>
+            </li>
+            <li>
+              <a class="nav__item" href="services.html">Our Services</a>
+            </li>
+            <li>
+              <a class="nav__item" href="faqs.html">FAQs</a>
+            </li>
+            <li>
+              <a class="nav__item" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="page__hero">
+      <div class="page__container">
+        <div class="row">
+          <div class="page__column col-6">
+            <h1>Contact Us</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main role="main">
+    <div class="page__container">
+      <div class="row">
+        <form name="Certificate" method="post" netlify>
+          <fieldset>
+            <legend>Personal Bio Data</legend>
+            <div class="form-group">
+              <label for="inputFname">First Name</label>
+              <input type="text" class="form-control" name="first_name" id="inputFname" placeholder="First Name" pattern="[a-zA-Z]+" title="Only input names that are formed with any combination of letters A-Z" required>
+            </div>
+            <div class="form-group">
+              <label for="inputLname">Last Name</label>
+              <input type="text" class="form-control" name="last_name" id="inputLname" placeholder="Last Name" pattern="[a-zA-Z]+" title="Only input names that are formed with any combination of letters A-Z" required>
+            </div>
+            <div class="form-group">
+              <label for="inputOname">Other Name</label>
+              <input type="text" class="form-control" name="other_name" id="inputOname" placeholder="Other Name" pattern="[a-zA-Z]+" title="Only input names that are formed with any combination of letters A-Z" required>
+            </div>
+            <div class="form-group">
+              <p>Gender</p>
+              <input type="radio" name="gender" id="inputGenderMale" value="male">
+              <label for="inputGenderMale">Male</label>
+              <input type="radio" name="gender" id="inputGenderFemlae" value="female">
+              <label for="inputGenderFemale">Female</label>
+            </div>
+            <div class="form-group">
+              <label for="inputNationality">Nationality</label>
+              <input type="text" class="form-control" name="nationality" id="inputNationality" placeholder="Nationality" pattern="[a-zA-Z]+" title="Only input names that are formed with any combination of letters A-Z" required>
+            </div>
+            <div class="form-group">
+              <label for="inputState">State / Region</label>
+              <input type="text" class="form-control" name="state/region" id="inputState" placeholder="State / Region" pattern="[a-zA-Z]+" title="Only input names that are formed with any combination of letters A-Z" required>
+            </div>
+            <div class="form-group">
+              <label for="inputLga">L.G.A</label>
+              <input type="text" class="form-control" name="l.g.a" id="inputLga" placeholder="Other Name" pattern="[a-zA-Z]+" title="Only input names that are formed with any combination of letters A-Z" required>
+            </div>
+            <div class="form-group">
+              <p>Age</p>
+              <input type="radio" name="age" id="inputAge1" value="15-20">
+              <label for="inputAge1">15-20</label>
+              <input type="radio" name="age" id="inputAge2" value="21-30">
+              <label for="inputAge2">21-30</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Contact Details</legend>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" name="address" id="inputAddress" placeholder="Address" pattern="[a-zA-Z]+" title="Only input names that are formed with any combination of letters A-Z">
+            </div>
+            <div class="form-group">
+              <label for="inputPhone">Phone number</label>
+              <input type="tel" name="phone" id="inputPhone" class="form-control" placeholder="+234 800 000 0000">
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email" required>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Questionnaire</legend>
+            <div class="form-group">
+              <p>1.	Do you have any business idea?</p>
+              <input type="radio" name="business" id="yes" value="yes">
+              <label for="inputAge1">Yes</label>
+              <input type="radio" name="business" id="no" value="no">
+              <label for="inputAge2">No</label>
+            </div>
+            <div class="form-group">
+              <p>2.	If yes, what is your greatest challenge in starting the idea?</p>
+              <input type="radio" name="challenge" id="finance" value="finance">
+              <label for="finance">Finance</label>
+              <input type="radio" name="challenge" id="knowledge" value="knowledge">
+              <label for="knowledge">Knowledge</label>
+              <input type="radio" name="challenge" id="failure" value="failure">
+              <label for="failure">Fear of failure</label>
+            </div>
+            <div class="form-group">
+              <p>3.	Which industry does your idea belong to?</p>
+              <input type="radio" name="idea" id="agriculture" value="agriculture">
+              <label for="agriculture">Agriculture</label>
+              <input type="radio" name="idea" id="food" value="food">
+              <label for="food">Food and Beverages</label>
+              <input type="radio" name="idea" id="packaging" value="packaging">
+              <label for="packaging">Packaging and processing</label>
+              <input type="radio" name="idea" id="refining" value="refining">
+              <label for="refining">Refining</label>
+              <input type="radio" name="idea" id="general" value="general">
+              <label for="general">General Services</label>
+              <input type="radio" name="idea" id="others" value="others">
+              <label for="others">Others</label>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
