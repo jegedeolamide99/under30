@@ -471,7 +471,10 @@ to {opacity: 1}
   .nav__links {
     display: none;
     flex-direction: column;
+    align-items: flex-start;
   }
+  .nav__item {padding: 0; text-align: left; padding-left: 1rem; transition: all .2s ease-out;}
+  .nav__item:hover {border-left: 2px solid #E5E500; transition: all .2s ease-in;}
   .nav__toggler {
     display: initial;
     cursor: pointer;
@@ -481,6 +484,8 @@ to {opacity: 1}
   .nav__toggleShow {
     display: flex;
     padding: 1rem 0;
+    width: 100%;
+    background-color: #F4FDF4;
   }
   .page_footer p {text-align: center;}
 }
