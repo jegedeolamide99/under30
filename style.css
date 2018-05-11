@@ -306,6 +306,7 @@ footer {
 input[type=radio]:not(:first-of-type) {
   margin-left: .5rem;
 }
+.certificate form {margin-bottom: 1rem;}
 .btn {
   display: inline-block;
   font-weight: 400;
