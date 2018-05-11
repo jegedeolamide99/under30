@@ -360,12 +360,20 @@ button.btn:hover {
   position: relative;
   flex-direction: column;
   background-color: #999999;
-  background-image: url("images/business3.jpg");
   background-position: center center;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 80vh;
+}
+.mySlides:nth-child(1) {
+  background-image: url("images/inspire.jpeg");
+}
+.mySlides:nth-child(2) {
+  background-image: url("images/business3.jpg");
+}
+.mySlides:nth-child(3) {
+  background-image: url("images/train.jpeg");
 }
 
 /* Next & previous buttons */
