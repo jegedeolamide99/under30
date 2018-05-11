@@ -210,7 +210,7 @@ footer {
   height: 100%;
   padding: 0;
 }
-/* FOOTER SOCIAL */
+/* FOOTER */
 .page_footer {background-color: #fff;}
 .page__footer--social {
   display: flex;
@@ -287,12 +287,12 @@ footer {
   height: inherit;
   object-fit: cover;
 }
-/* CONTACT */
+/* CONTACT & CERTIFICATE */
 .contact .form-group, .certificate .form-group {margin-bottom: 1rem;}
 .contact .form-group .col-6 {padding: 0 .5rem;}
 .contact .form-control, .certificate .form-control {
   display: block;
-  width: 100%;
+  width: 95%;
   padding: .375rem .75rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -302,6 +302,9 @@ footer {
   border: 1px solid #2A7D2E;
   border-radius: 4px;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input[type=radio]:not(:first-of-type) {
+  margin-left: .5rem;
 }
 .btn {
   display: inline-block;
@@ -349,7 +352,7 @@ button.btn:hover {
   position:absolute;
 }
 /* SLIDESHOW */
-.page__slideshow {position: relative; margin-top: 71px;}
+.page__slideshow, .page__hero {position: relative; margin-top: 71px;}
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -444,6 +447,7 @@ from {opacity: .4}
 to {opacity: 1}
 }
 @media screen and (max-width:991px) {
+  main {padding: 1rem 0;}
   ul {padding-left: 1.25rem;}
   .info .row {
     margin-bottom: 1rem;
@@ -478,7 +482,7 @@ to {opacity: 1}
     display: flex;
     padding: 1rem 0;
   }
-  .contact .form-control {width: 85vw;}
+  .page_footer p {text-align: center;}
 }
 @media screen and (min-width:576px) {
     .page__container {
