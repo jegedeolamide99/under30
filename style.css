@@ -93,7 +93,7 @@ a.nav__brand {flex: 0 0 10%; font-weight: 700;}
   background-repeat: no-repeat;
 }
 .page__hero h3 {color: #FFF4DF;}
-.text h1 {
+.page__hero h1, .text h1 {
   font-weight: 700;
   font-size: 2rem;
   color: #E5E500;
